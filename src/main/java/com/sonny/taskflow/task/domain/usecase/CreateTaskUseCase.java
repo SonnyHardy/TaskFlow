@@ -33,7 +33,8 @@ public class CreateTaskUseCase {
         return new CreateTaskResult(
                 task.getId(),
                 task.getTitle(),
-                task.getStatus()
+                task.getStatus(),
+                task.getAssignedTo()
         );
 
     }

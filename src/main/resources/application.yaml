@@ -2,7 +2,14 @@ spring:
   application:
     name: TaskFlow
 
+
   datasource:
     url: jdbc:postgresql://localhost:5432/taskflow
     username: ${DB_USER:postgres}
     password: ${DB_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8082

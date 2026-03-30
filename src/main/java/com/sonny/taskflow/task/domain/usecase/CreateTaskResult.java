@@ -7,6 +7,7 @@ import java.util.UUID;
 public record CreateTaskResult(
         UUID id,
         String title,
-        TaskStatus status
+        TaskStatus status,
+        String assignedTo
 ) {
 }
