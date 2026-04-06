@@ -17,7 +17,7 @@ public record TaskResponse(
                 taskResult.id(),
                 taskResult.title(),
                 taskResult.status().name(),
-                null
+                taskResult.assignedTo()
         );
     }
 
